@@ -1,0 +1,14 @@
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 10pt;
+}
+
+.column.center {
+    width: 100%;
+    text-align: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    opacity: .6;
+}

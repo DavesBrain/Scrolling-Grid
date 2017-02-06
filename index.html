@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="NeuranetApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="plugins/KendoUI/styles/kendo.common.min.css" type="text/css" />
+    <link rel="stylesheet" href="plugins/KendoUI/styles/kendo.default.min.css" type="text/css" />
+    <link rel="stylesheet" href="plugins/KendoUI/styles/kendo.default.mobile.min.css" type="text/css" />
+
+    <link href="css/Site.css"  rel="stylesheet" type="text/css"/>
+
+    <script src="plugins/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="plugins/angular/angular.min.js" type="text/javascript"></script>
+    <script src="plugins/KendoUI/js/kendo.all.min.js" type="text/javascript"></script>
+    <script src="plugins/faker/faker.min.js" type = "text/javascript"></script>
+
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/services/dataService.js" type="text/javascript"></script>
+</head>
+<body ng-controller="mainController">                                                                                                                                                                                                                              
+    <div ui-view>
+        <div id="main">
+            <div 
+                 kendo-grid 
+                 k-data-source="masterGrid.dataSource" 
+                 k-options="masterGrid.gridOptions">
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
